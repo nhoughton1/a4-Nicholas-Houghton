@@ -1,4 +1,5 @@
 function Results(props){
+    //displays results table
     return (
         <table id="showtable">
     <thead>

@@ -1,10 +1,12 @@
 import {useState} from 'react'
+//form component
 function Form(props) {
+    //variables for show watched total and modify selector
     const [show, setShow] = useState('')
     const [watched, setWatched] = useState(0)
     const [total, setTotal] = useState(0)
     const [modifySelector, setModifySelector] = useState('')
-
+//submit show
     const submit = function(event){
 
         event.preventDefault()
@@ -15,6 +17,7 @@ function Form(props) {
         }
         props.submit(json)
     }
+    //modify show selector
     const modifyShow = function(){
         const json = {
             _id: modifySelector,
@@ -25,6 +28,7 @@ function Form(props) {
         props.modifyShow(json)
     }
     return (
+        //displays the form
         <form onSubmit={submit}>
             <label className="form-group" htmlFor="showname">Show</label>
             <input className="form-group" type='text' id='showname' value={show} placeholder = "Name Of Show Here"
@@ -49,6 +53,7 @@ function Form(props) {
                         <option value = "">
                             Select
                         </option>
+                        {/*create dropdown options*/}
                         {props.shows.map((show, index) => (
                             <option key={show._id} value={show._id}>
                                 {index+1}
