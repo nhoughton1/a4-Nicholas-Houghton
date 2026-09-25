@@ -1,5 +1,5 @@
 ## TV Show Progress Tracker
-https://a4-nicholas-houghton.onrender.com/
+https://a4-nicholas-houghton.onrender.com/  
 Nicholas Houghton
 
 This is a TV Show progress tracker which allows multiple users to track the TV shows they are watching. The goal is, after logging in, to allow you to enter the name of any tv show you have or are currently watching, and then include the number of episodes you have seen, and then the total number of episodes in the show.
